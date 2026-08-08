@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping Tags</title>
+    <style>
+        body {
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            background-color: rgb(204, 204, 184);
+            margin: 0px;
+        }
+
+        header {
+            background-color: rgb(255, 255, 255);
+            padding: 10px;
+            margin: 10px;
+            text-align: center;
+            border-radius: 10px 0px;
+        }
+
+        h1 {
+            box-shadow: 1.5px 2px 3px 0.5px rgba(0, 0, 0, 0.5);
+            height: auto;
+            text-align: center justify;
+        }
+
+        nav {
+            background-color: rgb(190, 190, 171);
+            padding: 3px;
+            text-align: center;
+            box-shadow: 1.5px 2px 3px 0.5px rgba(0, 0, 0, 0.5);
+        }
+
+        nav > a {
+            text-decoration: none;
+            color: black;
+            font-weight: bold;
+            margin: 30px;
+        }
+        nav > a:hover {
+            text-decoration: underline;
+            color: darkred;
+        }
+
+        main {
+            background-color: rgb(255, 255, 255);
+            padding: 10px;
+            margin: 10px;
+            border-radius: 10px 0px;
+        }
+
+        article {
+            background-color: beige;
+            box-shadow: 1.5px 2px 3px 0.5px rgba(0, 0, 0, 0.5);
+            margin: 10px;
+        }
+
+        article > aside {
+            background-color: rgb(190, 190, 171);
+        }
+
+        footer {
+            color: white;
+            background-color: rgb(0, 0, 0);
+            text-align: center;
+            padding: 2px;
+            margin: 0px;
+        }
+
+        footer > p {
+            margin: 0px;
+        }
+
+        div {
+            height: 100px;
+            width: 100px;
+            margin: 10px;
+            background-color: white;
+            border-radius: 50px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Meu Site</h1>
+        <nav>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+        </nav> 
+    </header>
+    <main>
+        <p>Arte / Cultura / Variedades</p>
+        <section id="noticias">
+            <article>
+                <h2>Notícia 01</h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eius maiores mollitia, amet corrupti culpa sint voluptas quidem beatae eaque? Eum dignissimos eligendi doloribus harum eaque esse quae quas nam? Tempora.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique quo rem necessitatibus laborum, corporis aliquam enim maxime unde culpa quia! Harum minima culpa quis fugit dolorum vero illo labore optio! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusantium cupiditate rem explicabo, accusamus ratione qui vel iusto doloribus unde distinctio recusandae corrupti quo fuga iure sed iste quisquam omnis eaque.</p>
+                <aside>
+                    <p>Artigo escrito por Roger Santos</p>
+                </aside>
+            </article>
+            <article>
+                <h2>Notícia 02</h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eius maiores mollitia, amet corrupti culpa sint voluptas quidem beatae eaque? Eum dignissimos eligendi doloribus harum eaque esse quae quas nam? Tempora. Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque placeat fuga, necessitatibus unde qui quis error fugit dignissimos dolores tenetur repudiandae ullam autem ipsum repellat quam doloremque. Quod, officia distinctio!</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae non quod inventore magnam amet? Ratione, harum non praesentium voluptate repellendus iusto, explicabo, aut id sunt veniam consectetur et velit atque?</p>
+                <aside>
+                    <p>Artigo escrito por Roger Santos</p>
+                </aside>
+            </article>
+        </section>
+    </main>
+    <footer>
+        <p>Desenvolvido por RSDev</p>
+    </footer>
+    <div id="bola"></div>
+</body>
+</html>

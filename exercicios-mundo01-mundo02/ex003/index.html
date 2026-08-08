@@ -1,0 +1,45 @@
+<!-- Informa ao navegador que este documento utiliza a versão HTML5 -->
+<!DOCTYPE html>
+
+<!-- Tag raiz do documento, definindo corretamente o idioma como Português do Brasil -->
+<html lang="pt-br">
+
+<!-- O 'head' guarda as configurações estruturais e metadados da página -->
+<head>
+    <!-- Define a codificação universal UTF-8 para evitar problemas com acentos e caracteres especiais -->
+    <meta charset="UTF-8">
+    <!-- Torna o site responsivo para se ajustar a telas de celulares e computadores -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Título que aparece na aba superior do navegador -->
+    <title>Document</title>
+</head>
+
+<!-- O 'body' contém todo o conteúdo visível que será exibido na tela -->
+<body>
+
+    <!-- Título principal da página -->
+    <h1>Testando carga e Imagens</h1>
+
+    <!-- Parágrafo de texto comum -->
+    <p>Abaixo você vai ver uma fucking imagem que está na mesma pasta</p>
+    <!-- Tag de imagem (img). Ela é auto-conclusiva (não precisa de </img>) -->
+    <!-- src="...": Como o arquivo está na mesma pasta que este HTML, basta colocar o nome exato dele e a extensão (.jpg) -->
+    <!-- alt="...": Descrição da imagem. Essencial se a imagem sumir ou para leitores de tela -->
+    <img src="IMG_20211104_065650_679.jpg" alt="Flores de Buganville Brancas">
+    
+    <!-- Parágrafo explicativo sobre organização de pastas -->
+    <p>Podemos carregar iamgens em subpastas</p>
+    <!-- src="img/...": Entra na pasta chamada 'img' e depois puxa o arquivo. Deixar as imagens em uma pasta separada é a melhor prática de organização -->
+    <!-- Nota: É uma boa prática preencher o 'alt' aqui também para descrever essa imagem! -->
+    <img src="img/IMG_20200715_154730.jpg" alt="Foto na subpasta img">
+    
+    <!-- Parágrafo explicativo sobre links externos -->
+    <p>Também podemos carregar imagens externas</p>
+    <!-- src="https://...": Puxa a imagem diretamente de um servidor na internet usando a URL completa (endereço web) -->
+    <img src="https://imagens.climatempo.com.br/climapress/galeria/2021/03/db96ac9a7081c0bf3ce28972da41dde8.jpg" alt="Imagem de folha com geada">
+
+<!-- Encerra o corpo do documento -->
+</body>
+
+<!-- Encerra o arquivo HTML -->
+</html>

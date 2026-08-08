@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+    <style>
+
+        /*  SELETORES PERSONALIZADOS
+
+            #  =  id
+                O seletor # é usado para selecionar um elemento que possui um id específico.
+                Características
+                    - Deve ser único na página.
+                    - Um elemento pode ter apenas um id.
+                    - Possui alta prioridade no CSS.
+
+            .  =  class
+                O seletor . é usado para selecionar elementos que possuem uma determinada classe.
+                Características
+                    - Pode ser reutilizada em vários elementos.
+                    - Um elemento pode ter várias classes.
+
+            :  =  pseudo-class
+                As pseudo-classes servem para estilizar um elemento em um estado específico.
+                Exemplo: quando o mouse passa sobre um link, quando o usuário clica no campo, etc.
+                Pseudo-classes comuns:
+                    :hover            Mouse sobre o elemento
+                    :focus	          Elemento selecionado
+                    :checked	      Checkbox/radio marcado
+                    :first-child	  Primeiro filho
+                    :last-child	      Último filho
+
+            :: =  pseudo_element
+                Os pseudo-elementos permitem estilizar uma parte específica de um elemento.
+                Exemplo: a primeira letra do parágrafo ficando maior, estilizar apenas a primeira linha, adicionar algo antes ou depois do conteúdo...
+                Pseudo-elementos comuns:
+                    ::before	      Insere conteúdo antes
+                    ::after	          Insere conteúdo depois
+                    ::first-letter	  Primeira letra
+                    ::first-line	  Primeira linha
+
+            >  =  child
+                Seleciona apenas os elementos que são filhos diretos de outro elemento.
+
+            Uma forma fácil de lembrar:
+                # → identifica um único elemento.
+                . → identifica um grupo de elementos.
+                : → identifica um estado do elemento.
+                :: → identifica uma parte do elemento.
+                > → identifica um filho direto do elemento.
+                
+        */
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;            
+        }
+
+        a {
+            color: red;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        a:visited {
+            color: darkred;
+        }
+
+        a:hover {
+            color: black;
+            text-decoration: underline;
+        }
+
+        a:active {
+            color: yellow;
+        }
+
+        .especial {
+            background-color: darksalmon;
+        }
+
+        .especial::before {
+            content: "⇒ ";
+            text-decoration: none;
+            font-weight: normal;
+            color: darkslategrey;
+            font-weight: bold;
+        }
+
+        .especial::after  {
+            content: " ⇐";
+            text-decoration: none;
+            font-weight: normal;
+            color: darkslategrey;
+            font-weight: bold;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Personalizando Links</h1>
+    <ul>
+        <li><a href="https://gustavoguanabara.github.io" target="_blank">Repositório GitHub</a></li>
+        <li><a href="https://youtube.com/cursoemvideo/" class="especial" target="_blank">Canal do Youtube</a></li>
+        <li><a href="https://www.cursoemvideo.com" target="_blank">Site do CursoemVídeo</a></li>
+    </ul>
+</body>
+</html>

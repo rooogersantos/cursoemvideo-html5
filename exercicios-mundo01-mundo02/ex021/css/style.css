@@ -1,0 +1,45 @@
+@charset "UTF-8";
+
+body {
+    background-color: rgb(225, 255, 194);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h1 {
+    color: rgb(0, 61, 0);
+}
+
+#principal {
+    text-align: center;
+    background-color:darkgreen;
+    color: white;
+}
+
+.basico {
+    color: brown;
+}
+
+.intermediario {
+    color:crimson;
+}
+
+.avancado {
+    color:deeppink;
+}
+
+.destaque {
+    background-color: gold;
+}
+
+#subtitulo {
+    background-color: rgba(250, 231, 28, 0.603);
+}
+
+/*
+    em HTML é id = e em CSS é # (só pode um elemento)
+    em HTML é class = e em CSS é . (pode vários elementos)
+*/
+
+h2 {
+    color: rgb(43, 104, 43);
+}

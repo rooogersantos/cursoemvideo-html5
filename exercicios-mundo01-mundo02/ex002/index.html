@@ -1,0 +1,80 @@
+<!-- Avisa ao navegador que o documento utiliza a versão HTML5 -->
+<!DOCTYPE html>
+
+<!-- Tag raiz do documento. Nota: 'lang="en"' define o idioma como inglês. Se o site for em português, o ideal é mudar para "pt-br" -->
+<html lang="en">
+
+<!-- O 'head' guarda as configurações estruturais e metadados que o usuário não vê diretamente na página -->
+<head>
+    <!-- Define a codificação universal UTF-8, essencial para exibir acentos, símbolos e emojis sem bugar -->
+    <meta charset="UTF-8">
+    
+    <!-- Torna a página responsiva, adaptando o layout para telas de celulares, tablets e computadores -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Título padrão que aparece na aba lá em cima no navegador -->
+    <title>Document</title>
+</head>
+
+<!-- O 'body' contém todo o conteúdo visível que será renderizado na tela -->
+<body>
+
+    <!-- Cria uma linha horizontal para separar o topo do conteúdo -->
+    <hr>
+    
+    <!-- Título principal da página (Heading 1) -->
+    <h1>Parágrafos e quebras de linha</h1>
+    
+    <!-- Outra linha horizontal divisória -->
+    <hr>
+    
+    <!-- Inicia um parágrafo de texto comum -->
+    <p>
+        <!-- '&lt;' (Less Than) exibe o símbolo '<' e '&gt;' (Greater Than) exibe o símbolo '>' -->
+        <!-- Usamos isso para mostrar as tags como texto na tela sem que o navegador ache que são comandos reais -->
+        Você pode escrever um parágrafo de qualquer jeito, basta colocar tudo no meio do par de tags &lt;p&gt; e &lt;/p&gt; 
+    </p>
+    
+    <!-- Novo parágrafo demonstrando a quebra de linha -->
+    <p>
+        Se precisar quebrar o texto em lgum lugar específico 
+        <!-- A tag <br> (Break Line) força o texto a ir para a linha de baixo sem criar um novo parágrafo -->
+        <br>como esse você pode usar a tag &lt;br&gt;.
+    </p>
+    
+    <!-- Linha horizontal separando a seção de texto da seção de símbolos -->
+    <hr>
+    
+    <!-- Parágrafo contendo códigos de entidades HTML para exibir símbolos especiais -->
+    <p>Vamos adicionar alguns símbolos especiais:
+        &reg;       <!-- Marca Registrada (®) -->
+        &copy;      <!-- Direitos Autorais/Copyright (©) -->
+        &trade;     <!-- Marca Comercial/Trademark (™) -->
+        &euro;      <!-- Símbolo da moeda Euro (€) -->
+        &pound;     <!-- Símbolo da moeda Libra Esterlina (£) -->
+        &yen;       <!-- Símbolo da moeda Iene/Yuan (¥) -->
+        &cent;      <!-- Símbolo de Centavos (¢) -->
+        &delta;     <!-- Letra grega delta minúscula (δ) -->
+        &Delta;     <!-- Letra grega delta maiúscula (Δ) -->
+        &uparrow;   <!-- Seta para cima (↑) -->
+        &downarrow; <!-- Seta para baixo (↓) -->
+    </p>
+    
+    <!-- Linha horizontal separando a seção de símbolos da seção de emojis -->
+    <hr>
+    
+    <!-- Parágrafo utilizando códigos unicode (hexadecimais) para renderizar emojis -->
+    <!-- O prefixo '&#x' avisa ao HTML que o que vem a seguir é o código único daquele emoji -->
+    <p>Vamos adicionar alguns emojis:
+        &#x1F590;   <!-- Mão aberta com os dedos separados (🖐) -->
+        &#x1F30E;   <!-- Globo terrestre mostrando as Américas (🌎) -->
+    </p>
+    
+    <!-- Linha horizontal para fechar o layout do exercício -->
+    <hr>
+
+<!-- Encerra o corpo do documento -->
+</body>
+
+<!-- Encerra o arquivo HTML -->
+</html>
