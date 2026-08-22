@@ -51,6 +51,7 @@ header a:hover, footer a:hover {
 
 section > p {
     padding-bottom: 1.5em;
+    font-weight: 600
 }
 
 section {
@@ -70,12 +71,16 @@ section.normal {
 section.imagem {
     background-color: rgb(19, 18, 18);
     color: white;
+    background-size: cover;
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.500);
+    background-attachment: fixed;
 }
 
 section.imagem > p {
-    background-color: rgba(0, 0, 0, 0.74);
+    background-color: rgba(0, 0, 0, 0.54);
     display: inline-block;
     padding: 5px;
+    text-shadow: 1px 1px 0px black;
 }
 
 section#img01 {
