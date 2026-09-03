@@ -6,11 +6,11 @@
     <title>Tabelas</title>
     <style>
         body {
-            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            font-family: Arial, Helvetica, sans-serif;
         }
 
         table {
-            width: 800px;
+            
             border-collapse: collapse;
         }
 
@@ -23,232 +23,405 @@
             background-color: rgb(224, 224, 224);
         }
 
-        td.numero {
+        td.numero, th.numero {
             text-align: right;
         }
 
+        td.pais {
+            text-align: center;
+        }
+
+        td img {
+            vertical-align: middle;
+            margin-right: 5px;
+            height: 14px;
+            width: auto;
+        }
+
+        caption {
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: lightgray;
+            border-top: 1px solid black;
+            border-right: 1px solid black;
+            border-left: 1px solid black;
+        }
     </style>
 </head>
 <body>
     <h1>Uso de Tabelas Grandes</h1>
-    <!-- 
-        ANATOMIA DAS GRANDES TABELAS
-        TABLE
-            THEAD
-                TR, TD, TH
-            TBODY
-                TR, TD, TH
-            TFOOT
-                TR, TD, TH
-        -->
     <table>
         <thead>
             <tr>
-                <th></th>
-                <th>Estado</th>
-                <th>População</th>
-                <th>% do<br>total</th>
-                <th>País comparável<br>(habitantes)</th>
+                <th style="width: 30px;"></th>
+                <th scope="col" style="width: 180px;">Estado</th>
+                <th scope="col" style="width: 90px;">População</th>
+                <th scope="col" style="width: 50px;">% do<br>total</th>
+                <th scope="col" style="width: 200px;">País comparável<br>(habitantes)</th>
             </tr>
         </thead>
         <tbody>
             <tr>
                 <td class="numero">1</td>
-                <td>São Paulo</td>
+                <td>
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/2/2b/Bandeira_do_estado_de_S%C3%A3o_Paulo.svg" alt="Bandeira de São Paulo">
+                    São Paulo
+                </td>
                 <td class="numero">46.179.008</td>
                 <td class="numero">21,55%</td>
-                <td>Argentina<br>(45.851.378)</td>
+                <td class="pais">
+                    <img src="https://flagcdn.com/w20/ar.png" alt="Bandeira da Argentina"> 
+                    Argentina<br>(45.851.378)
+                </td>
             </tr>
             <tr>
                 <td class="numero">2</td>
-                <td>Minas Gerais</td>
+                <td>
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/f/f4/Bandeira_de_Minas_Gerais.svg" alt="Bandeira de Minas Gerais">
+                    Minas Gerais
+                </td>
                 <td class="numero">21.460.311</td>
                 <td class="numero">10,01%</td>
-                <td>Chade<br>(21.003.705)</td>
+                <td class="pais">
+                    <img src="https://flagcdn.com/w20/td.png" alt="Bandeira do Chade"> 
+                    Chade<br>(21.003.705)
+                </td>
             </tr>
             <tr>
                 <td class="numero">3</td>
-                <td>Rio de<br>Janeiro</td>
+                <td>
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/7/73/Bandeira_do_estado_do_Rio_de_Janeiro.svg" alt="Bandeira do Rio de Janeiro">
+                    Rio de Janeiro
+                </td>
                 <td class="numero">17.225.410</td>
                 <td class="numero">8,04%</td>
-                <td>Zimbabwe<br>(16.950.795)</td>
+                <td class="pais">
+                    <img src="https://flagcdn.com/w20/zw.png" alt="Bandeira do Zimbabwe"> 
+                    Zimbabwe<br>(16.950.795)
+                </td>
             </tr>
             <tr>
                 <td class="numero">4</td>
-                <td>Bahia</td>
+                <td>
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/2/28/Bandeira_da_Bahia.svg" alt="Bandeira da Bahia">
+                    Bahia
+                </td>
                 <td class="numero">14.889.472</td>
                 <td class="numero">6,95%</td>
-                <td>Benim<br>(14.814.460)</td>
+                <td class="pais">
+                    <img src="https://flagcdn.com/w20/bj.png" alt="Bandeira do Benim"> 
+                    Benim<br>(14.814.460)
+                </td>
             </tr>
             <tr>
                 <td class="numero">5</td>
-                <td>Paraná</td>
+                <td>
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/9/93/Bandeira_do_Paran%C3%A1.svg" alt="Bandeira do Paraná">
+                    Paraná
+                </td>
                 <td class="numero">11.952.456</td>
                 <td class="numero">5,57%</td>
-                <td>Haiti<br>(11.906.095)</td>
+                <td class="pais">
+                    <img src="https://flagcdn.com/w20/ht.png" alt="Bandeira do Haiti"> 
+                    Haiti<br>(11.906.095)
+                </td>
             </tr>
             <tr>
                 <td class="numero">6</td>
-                <td>Rio Grande<br>do Sul</td>
+                <td>
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/6/63/Bandeira_do_Rio_Grande_do_Sul.svg" alt="Bandeira do Rio Grande do Sul">
+                    Rio Grande do Sul
+                </td>
                 <td class="numero">11.233.317</td>
                 <td class="numero">5,26%</td>
-                <td>Emirados Árabes<br>Unidos (11.346.000)</td>
+                <td class="pais">
+                    <img src="https://flagcdn.com/w20/ae.png" alt="Bandeira dos Emirados Árabes Unidos"> 
+                    Emirados Árabes<br>Unidos (11.346.000)
+                </td>
             </tr>
             <tr>
                 <td class="numero">7</td>
-                <td>Pernambuco</td>
+                <td>
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/5/59/Bandeira_de_Pernambuco.svg" alt="Bandeira de Pernambuco">
+                    Pernambuco
+                </td>
                 <td class="numero">9.583.176</td>
                 <td class="numero">4,48%</td>
-                <td>Israel<br>(9.517.181)</td>
+                <td class="pais">
+                    <img src="https://flagcdn.com/w20/il.png" alt="Bandeira de Israel"> 
+                    Israel<br>(9.517.181)
+                </td>
             </tr>
             <tr>
                 <td class="numero">8</td>
-                <td></td>
-                <td class="numero"></td>
-                <td class="numero"></td>
-                <td></td>
+                <td>
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/2/2e/Bandeira_do_Cear%C3%A1.svg" alt="Bandeira do Ceará">
+                    Ceará
+                </td>
+                <td class="numero">9.302.211</td>
+                <td class="numero">4,34%</td>
+                <td class="pais">
+                    <img src="https://flagcdn.com/w20/at.png" alt="Bandeira da Áustria"> 
+                    Áustria<br>(9.113.574)
+                </td>
             </tr>
             <tr>
                 <td class="numero">9</td>
-                <td></td>
-                <td class="numero"></td>
-                <td class="numero"></td>
-                <td></td>
+                <td>
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/0/02/Bandeira_do_Par%C3%A1.svg" alt="Bandeira do Pará">
+                    Pará
+                </td>
+                <td class="numero">8.756.324</td>
+                <td class="numero">4,08%</td>
+                <td class="pais">
+                    <img src="https://flagcdn.com/w20/sl.png" alt="Bandeira de Serra Leoa">
+                    Serra Leoa<br>(8.819.794)
+                </td>
             </tr>
             <tr>
                 <td class="numero">10</td>
-                <td></td>
-                <td class="numero"></td>
-                <td class="numero"></td>
-                <td></td>
+                <td>
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/1/1a/Bandeira_de_Santa_Catarina.svg" alt="Bandeira de Santa Catarina">
+                    Santa Catarina
+                </td>
+                <td class="numero">8.312.759</td>
+                <td class="numero">3,84%</td>
+                <td class="pais">
+                    <img src="https://flagcdn.com/w20/la.png" alt="Bandeira do Laos">
+                    Laos<br>(7.873.046)
+                </td>
             </tr>
             <tr>
                 <td class="numero">11</td>
-                <td></td>
-                <td class="numero"></td>
-                <td class="numero"></td>
-                <td></td>
+                <td>
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/b/be/Flag_of_Goi%C3%A1s.svg?utm_source=pt.wikipedia.org&utm_campaign=index&utm_content=original" alt="Bandeira de Goiás">
+                    Goiás
+                </td>
+                <td class="numero">7.495.033</td>
+                <td class="numero">3,48%</td>
+                <td class="pais">
+                    <img src="https://flagcdn.com/w20/ly.png" alt="Bandeira da Líbia">
+                    Líbia<br>(7.458.555)
+                </td>
             </tr>
             <tr>
                 <td class="numero">12</td>
-                <td></td>
-                <td class="numero"></td>
-                <td class="numero"></td>
-                <td></td>
+                <td>
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/4/45/Bandeira_do_Maranh%C3%A3o.svg" alt="Bandeira do Maranhão">
+                    Maranhão
+                </td>
+                <td class="numero">7.024.557</td>
+                <td class="numero">3,29%</td>
+                <td class="pais">
+                    <img src="https://flagcdn.com/w20/py.png" alt="Bandeira do Paraguai">
+                    Paraguai<br>(7.013.078)
+                </td>
             </tr>
             <tr>
                 <td class="numero">13</td>
-                <td></td>
-                <td class="numero"></td>
-                <td class="numero"></td>
-                <td></td>
+                <td>
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/Bandeira_do_Amazonas.svg" alt="Bandeira do Amazonas">
+                    Amazonas
+                </td>
+                <td class="numero">4.360.926</td>
+                <td class="numero">2,02%</td>
+                <td class="pais">
+                    <img src="https://flagcdn.com/w20/pa.png" alt="Bandeira do Panamá">
+                    Panamá<br>(4.571.189)
+                </td>
             </tr>
             <tr>
                 <td class="numero">14</td>
-                <td></td>
-                <td class="numero"></td>
-                <td class="numero"></td>
-                <td></td>
+                <td>
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/b/bb/Bandeira_da_Para%C3%ADba.svg" alt="Bandeira da Paraíba">
+                    Paraíba
+                </td>
+                <td class="numero">4.182.828</td>
+                <td class="numero">1,95%</td>
+                <td class="pais">
+                    <img src="https://flagcdn.com/w20/hr.png" alt="Bandeira da Croácia">
+                    Croácia<br>(3.848.160)
+                </td>
             </tr>
             <tr>
                 <td class="numero">15</td>
-                <td></td>
-                <td class="numero"></td>
-                <td class="numero"></td>
-                <td></td>
+                <td>
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/4/43/Bandeira_do_Esp%C3%ADrito_Santo.svg" alt="Bandeira do Espírito Santo">
+                    Espírito Santo
+                </td>
+                <td class="numero">4.150.692</td>
+                <td class="numero">1,93%</td>
+                <td class="pais">
+                    <img src="https://flagcdn.com/w20/hr.png" alt="Bandeira da Croácia">
+                    Croácia<br>(3.848.160)
+                </td>
             </tr>
             <tr>
                 <td class="numero">16</td>
-                <td></td>
-                <td class="numero"></td>
-                <td class="numero"></td>
-                <td></td>
+                <td>
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/0/0b/Bandeira_de_Mato_Grosso.svg" alt="Bandeira do Mato Grosso">
+                    Mato Grosso
+                </td>
+                <td class="numero">3.950.330</td>
+                <td class="numero">1,82%</td>
+                <td class="pais">
+                    <img src="https://flagcdn.com/w20/hr.png" alt="Bandeira da Croácia">
+                    Croácia<br>(3.848.160)
+                </td>
             </tr>
             <tr>
                 <td class="numero">17</td>
-                <td></td>
-                <td class="numero"></td>
-                <td class="numero"></td>
-                <td></td>
+                <td>
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/3/30/Bandeira_do_Rio_Grande_do_Norte.svg" alt="Bandeira do Rio Grande do Norte">
+                    Rio Grande do Norte
+                </td>
+                <td class="numero">3.463.737</td>
+                <td class="numero">1,62%</td>
+                <td class="pais">
+                    <img src="https://flagcdn.com/w20/mn.png" alt="Bandeira da Mongólia">
+                    Mongólia<br>(3.517.100)
+                </td>
             </tr>
             <tr>
                 <td class="numero">18</td>
-                <td></td>
-                <td class="numero"></td>
-                <td class="numero"></td>
-                <td></td>
+                <td>
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/3/33/Bandeira_do_Piau%C3%AD.svg" alt="Bandeira do Piauí">
+                    Piauí
+                </td>
+                <td class="numero">3.392.617</td>
+                <td class="numero">1,59%</td>
+                <td class="pais">
+                    <img src="https://flagcdn.com/w20/uy.png" alt="Bandeira do Uruguai">
+                    Uruguai<br>(3.384.688)
+                </td>
             </tr>
             <tr>
                 <td class="numero">19</td>
-                <td></td>
-                <td class="numero"></td>
-                <td class="numero"></td>
-                <td></td>
+                <td>
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/8/88/Bandeira_de_Alagoas.svg" alt="Bandeira de Alagoas">
+                    Alagoas
+                </td>
+                <td class="numero">3.221.128</td>
+                <td class="numero">1,51%</td>
+                <td class="pais">
+                    <img src="https://flagcdn.com/w20/ba.png" alt="Bandeira da Bósnia e Herzegovina">
+                    Bósnia e Herzegovina<br>(3.140.095)
+                </td>
             </tr>
             <tr>
                 <td class="numero">20</td>
-                <td></td>
-                <td class="numero"></td>
-                <td class="numero"></td>
-                <td></td>
+                <td>
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/3/3c/Bandeira_do_Distrito_Federal_%28Brasil%29.svg" alt="Bandeira do Distrito Federal">
+                    Distrito Federal
+                </td>
+                <td class="numero">3.009.996</td>
+                <td class="numero">1,40%</td>
+                <td class="pais">
+                    <img src="https://flagcdn.com/w20/md.png" alt="Bandeira da Moldávia">
+                    Moldávia<br>(2.996.106)
+                </td>
             </tr>
             <tr>
                 <td class="numero">21</td>
-                <td></td>
-                <td class="numero"></td>
-                <td class="numero"></td>
-                <td></td>
+                <td>
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/6/64/Bandeira_de_Mato_Grosso_do_Sul.svg" alt="Bandeira do Mato Grosso do Sul">
+                    Mato Grosso do Sul
+                </td>
+                <td class="numero">2.946.317</td>
+                <td class="numero">1,37%</td>
+                <td class="pais">
+                    <img src="https://flagcdn.com/w20/am.png" alt="Bandeira da Armênia">
+                    Armênia<br>(2.952.365)
+                </td>
             </tr>
             <tr>
                 <td class="numero">22</td>
-                <td></td>
-                <td class="numero"></td>
-                <td class="numero"></td>
-                <td></td>
+                <td>
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/b/be/Bandeira_de_Sergipe.svg" alt="Bandeira de Sergipe">
+                    Sergipe
+                </td>
+                <td class="numero">2.307.255</td>
+                <td class="numero">1,08%</td>
+                <td class="pais">
+                    <img src="https://flagcdn.com/w20/gw.png" alt="Bandeira da Guiné-Bissau">
+                    Guiné-Bissau<br>(2.249.515)
+                </td>
             </tr>
             <tr>
                 <td class="numero">23</td>
-                <td></td>
-                <td class="numero"></td>
-                <td class="numero"></td>
-                <td></td>
+                <td>
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/f/fa/Bandeira_de_Rond%C3%B4nia.svg" alt="Bandeira de Rondônia">
+                    Rondônia
+                </td>
+                <td class="numero">1.757.338</td>
+                <td class="numero">0,82%</td>
+                <td class="pais">
+                    <img src="https://flagcdn.com/w20/mk.png" alt="Bandeira da Macedônia do Norte">
+                    Macedônia do Norte<br>(1.813.791)
+                </td>
             </tr>
             <tr>
                 <td class="numero">24</td>
-                <td></td>
-                <td class="numero"></td>
-                <td class="numero"></td>
-                <td></td>
+                <td>
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Bandeira_do_Tocantins.svg" alt="Bandeira de Tocantins">
+                    Tocantins
+                </td>
+                <td class="numero">1.595.994</td>
+                <td class="numero">0,74%</td>
+                <td class="pais">
+                    <img src="https://flagcdn.com/w20/bh.png" alt="Bandeira do Barém">
+                    Barém<br>(1.643.332)
+                </td>
             </tr>
             <tr>
                 <td class="numero">25</td>
-                <td></td>
-                <td class="numero"></td>
-                <td class="numero"></td>
-                <td></td>
+                <td>
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/4/4c/Bandeira_do_Acre.svg" alt="Bandeira do Acre">
+                    Acre
+                </td>
+                <td class="numero">887.794</td>
+                <td class="numero">0,41%</td>
+                <td class="pais">
+                    <img src="https://flagcdn.com/w20/km.png" alt="Bandeira de Comores">
+                    Comores<br>(882.847)
+                </td>
             </tr>
             <tr>
                 <td class="numero">26</td>
-                <td></td>
-                <td class="numero"></td>
-                <td class="numero"></td>
-                <td></td>
+                <td>
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/0/0c/Bandeira_do_Amap%C3%A1.svg" alt="Bandeira do Amapá">
+                    Amapá
+                </td>
+                <td class="numero">809.953</td>
+                <td class="numero">0,38%</td>
+                <td class="pais">
+                    <img src="https://flagcdn.com/w20/bt.png" alt="Bandeira do Butão">
+                    Butão<br>(796.682)
+                </td>
             </tr>
             <tr>
                 <td class="numero">27</td>
-                <td></td>
-                <td class="numero"></td>
-                <td class="numero"></td>
-                <td></td>
+                <td>
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/9/98/Bandeira_de_Roraima.svg" alt="Bandeira de Roraima">
+                    Roraima
+                </td>
+                <td class="numero">761.012</td>
+                <td class="numero">0,35%</td>
+                <td class="pais">
+                    <img src="https://flagcdn.com/w20/bt.png" alt="Bandeira do Butão">
+                    Butão<br>(796.682)
+                </td>
             </tr>
         </tbody>
+        <caption>Unidades federativas do Brasil por população</caption>
         <tfoot>
             <tr>
                 <td></td>
-                <th>Total</th>
-                <th class="numero">214.211.951</th>
-                <th class="numero">100%</th>
-                <th><hr></th>
+                <th scope="row">Total</th>
+                <td class="numero">214.211.951</td>
+                <td class="numero">100%</td>
+                <td></td>
             </tr>
         </tfoot>
     </table>
