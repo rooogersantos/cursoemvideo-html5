@@ -20,7 +20,7 @@
         }
 
         thead {
-            background-color: rgb(224, 224, 224);
+            background-color: rgb(150, 150, 150);
         }
 
         td.numero, th.numero {
@@ -38,11 +38,21 @@
             width: auto;
         }
 
+        tfoot {
+            background-color: rgb(150, 150, 150);
+            padding: 5px;
+            font-size: bold;
+        }
+
+        tbody tr:nth-child(even) {
+            background-color: lightgray;
+        }
+
         caption {
             font-size: 1.5em;
             font-weight: bold;
             padding: 10px;
-            background-color: lightgray;
+            background-color: rgb(150, 150, 150);
             border-top: 1px solid black;
             border-right: 1px solid black;
             border-left: 1px solid black;
@@ -416,11 +426,11 @@
         </tbody>
         <caption>Unidades federativas do Brasil por população</caption>
         <tfoot>
-            <tr>
+            <tr style="height: 40px">
                 <td></td>
                 <th scope="row">Total</th>
-                <td class="numero">214.211.951</td>
-                <td class="numero">100%</td>
+                <td class="numero"><strong>214.211.951</strong></td>
+                <td class="numero"><strong>100%</strong></td>
                 <td></td>
             </tr>
         </tfoot>
