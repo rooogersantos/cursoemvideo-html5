@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tabela</title>
+    <title>Exercício de Tabelas</title>
 </head>
 <style>
     body {
@@ -13,31 +13,42 @@
     table {
         border-collapse: collapse;
         width: 600px;
-        text-align: left;
     }
 
-    td {
+    td, th {
         border: 1px solid black;
         padding: 10px;      
     }
 
+    caption {
+        font-size: 1.3em;
+        font-weight: bold;
+        padding: 10px;
+    }
+
     thead {
         background-color: lightgray;
-        font-size: bold;
+        text-align: center;
     }
 </style>
 <body>
+    <h1>
+        Exercício de Tabelas
+    </h1>
     <table>
+        <caption>
+            Filmes Favoritos
+        </caption>
         <thead>
             <tr>
-                <td>Grupo</td>
-                <td>Nomes</td>
-                <td colspan="3">Filmes</td>
+                <th>Grupo</td>
+                <th>Nomes</td>
+                <th colspan="3">Filmes</td>
             </tr>
         </thead>
         <tbody>
             <tr>
-                <td rowspan="3" style="background-color: lightgray;">Homens</td>
+                <td rowspan="3" style="background-color: lightgray; font-weight: bold;">Mulheres</td>
                 <td>Ana Maria Santos</td>
                 <td>Alien</td>
                 <td>Rambo</td>
@@ -56,7 +67,7 @@
                 <td>Big Hero</td>
             </tr>
             <tr>
-                <td rowspan="3" style="background-color: lightgray;">Mulheres</td>
+                <td rowspan="3" style="background-color: lightgray; font-weight: bold;">Homens</td>
                 <td>Bruno Mendonça</td>
                 <td>Intocáveis</td>
                 <td>Amnésia</td>
